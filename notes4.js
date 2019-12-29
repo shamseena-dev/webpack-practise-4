@@ -125,3 +125,13 @@ WOOOWWW
 GOT AUTO LINKED
 
 ==========commit 5======================================================
+
+OPTIMIZATION // MINIFY
+
+8. CSS
+npm install --save-dev optimize-css-assets-webpack-plugin//
+==========COMMIT 6======================================================
+
+9. js
+const TerserPlugin = require("terser-webpack-plugin");
+
