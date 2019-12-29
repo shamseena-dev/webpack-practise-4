@@ -3,6 +3,7 @@ const common= require('./webpack.common');
 const merge = require("webpack-merge");
 var CleanWebpackPlugin = require("webpack-cleanup-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = merge(common, {
 	mode: "production",
@@ -18,6 +19,9 @@ module.exports = merge(common, {
 		 	use : [MiniCssExtractPlugin.loader,"css-loader","sass-loader"]
 		 }
 		]
+	},
+	optimization :{
+		minimizer: [new OptimizeCssAssetsPlugin()]
 	},
 	plugins: [
 	   new MiniCssExtractPlugin({filename:"[name].[contentHash].css"}),
