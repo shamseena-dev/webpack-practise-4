@@ -66,4 +66,37 @@ Assets:
 ==========================================================================
 WOOOWWW
 
-4.
+4........SASS/SCSS
+
+4.a) added src/css/style2.SCSS
+
+body{
+	color: blue;
+	h1{
+       color:brown;
+	}
+	
+}
+
+4. b) 
+/npm install sass-loader node-sass//
+
+4.c) inside 
+third_depOnSecond.js
+------------------------
+import "../css/style2.scss";
+
+4.d)  wp.common.js
+-----------------
+
+{
+		 	test: /\.scss$/,
+		 	use : ["style-loader","css-loader","sass-loader"]
+		 },
+============================
+//npm start
+//npm run build
+
+open dist/index.html
+IT WORKS!!
+

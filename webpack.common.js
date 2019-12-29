@@ -8,10 +8,7 @@ module.exports = {
 		main: "./src/js/third_depOnSecond.js",
 		vendor: "./src/js/index.js"
 	},
-	output: {
-		filename : "main.[contentHash].js",
-		path : path.resolve(__dirname, "dist")
-	},
+	
 	plugins: [new HtmlWebpackPlugin({
 		template : "./src/html/template.html"
 		})],
@@ -23,6 +20,10 @@ module.exports = {
 		 	use : ["style-loader","css-loader"]
 		 },
 		 {
+		 	test: /\.scss$/,
+		 	use : ["style-loader","css-loader","sass-loader"]
+		 },
+		 		 {
 		 	test: /\.html$/,
 		 	use:["html-loader"]
 		 },
