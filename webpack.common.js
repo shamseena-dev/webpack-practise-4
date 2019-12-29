@@ -4,7 +4,10 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
 	mode: "development",
 	devtool: "none",
-	entry: "./src/js/third_depOnSecond.js",
+	entry: {
+		main: "./src/js/third_depOnSecond.js",
+		vendor: "./src/js/index.js"
+	},
 	output: {
 		filename : "main.[contentHash].js",
 		path : path.resolve(__dirname, "dist")
