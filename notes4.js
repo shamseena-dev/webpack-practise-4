@@ -135,3 +135,6 @@ npm install --save-dev optimize-css-assets-webpack-plugin//
 9. js
 const TerserPlugin = require("terser-webpack-plugin");
 
+10. html MINIFY
+CHECK
+===========COMMIT 7=============================
