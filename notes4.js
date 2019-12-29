@@ -100,3 +100,28 @@ import "../css/style2.scss";
 open dist/index.html
 IT WORKS!!
 
+================COMMIT 4================
+5..
+<10> EXTRACT CSS
+
+MINI-CSS-EXTRACT-PLUGIN
+
+5.b) npm install --save-de mini-css-extract-plugin
+
+wp.prod.js
+------------
+plugins: [
+	   new MiniCssExtractPlugin(
+	   {filename:"[name].[contentHash].css"}),
+	   new CleanWebpackPlugin()]
+===========
+
+6..npm start,
+npm run build
+
+7.
+<link href="main.dddc52ec5591e8ea781c.css" rel="stylesheet"></head>
+WOOOWWW
+GOT AUTO LINKED
+
+==========commit 5======================================================
